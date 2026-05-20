@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de País</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef2f3;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Nacionalidade</h1>
+    Em que país você vive? <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificarNacio()">
 
+    <div id="resultado"></div>
+
+    <script>
+        function verificarNacio() {
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#resultado')
+            var pais = txtp.value
+            
+            res.innerHTML = `<p>Vivendo em <strong>${pais}</strong></p>`
+            
+            // Condição Composta do desafio (if e else)
+            // O .toLowerCase() serve para aceitar a palavra mesmo se a pessoa digitar "BRASIL" ou "brasil"
+            if (pais.toLowerCase() == 'brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
