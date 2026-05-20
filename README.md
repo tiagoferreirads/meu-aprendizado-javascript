@@ -1,4 +1,4 @@
-# 🚀 Meu Aprendizado em JavaScript
+#  Meu Aprendizado em JavaScript
 
 Bem-vindo ao meu repositório de estudos! Aqui estou registrando a minha evolução na programação web, organizando exercícios práticos e desafios lógicos à medida que domino os conceitos de JavaScript.
 
